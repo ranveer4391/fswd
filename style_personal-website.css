@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+.header-nav {
+    text-align: center;
+}
+.aside {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+.footer {
+    text-align: center;
+}
+
+.heart{
+    transition: 1s;
+    animation: beat 1s ease-in-out infinite alternate;
+}
+/* nav{
+    background-color: rgba(150, 39, 144, 0.299);
+} */
+.aside{
+    background-color: rgba(249, 111, 6, 0.328);
+}
+.main{
+    background-color: rgba(255, 0, 0, 0.446);
+}
+.footer{
+    background-color: rgba(137, 43, 226, 0.394);
+}
+.textarea{
+    background-color: rgba(0, 255, 255, 0.798);
+}
+.image{
+    border: 5px double rgb(0, 0, 0);
+    width: max-content;
+}
+
+main {
+    transition: 1s ease-in infinite alternate;
+}
+
+.python img {
+    width: 100px;
+    transition: 1s;
+    animation: python 1s ease-in-out infinite alternate;
+}
+
+.kotlin img {
+  
+    width: 100px;
+    transition: 1s;
+    animation: kotlin 2s ease-in-out infinite alternate;
+}
+
+.java img {
+
+    width: 100px;
+    transition: 1s;
+    animation: java 2s ease-in-out infinite alternate;
+}
+
+
+@keyframes python {
+    /* 0% {
+        transform: translate(1200px , 0 );
+    }
+    25%{
+        transform: translate(100 , 0);
+    } */
+    0%{
+        transform: scale(1.23);
+    } 
+}
+
+@keyframes kotlin {
+    /* 0% {
+        transform: translate(1200px , 0 );
+    }
+    25%{
+        transform: translate(100 , 0);
+    } */
+    0%{
+        transform: scale(1.23);
+    }
+    100%{
+        transform: scale(-1);
+    }
+}
+
+@keyframes java {
+    0% {
+        transform: translate(0px , 0 );
+    }
+    25% {
+        transform: translate(300px , 0);
+    }
+    50%{
+        transform: translate(600px , 0);
+    }
+    75%{
+        transform: translate(900px , 0);
+    }
+    100%{
+        transform: translate(1200px , 0);
+    }
+
+}
+
+@keyframes beat{
+    0% {
+        transform:scale(-1)
+    }
+    100% {
+        transform: scale(2);
+    }
+
+}
+
